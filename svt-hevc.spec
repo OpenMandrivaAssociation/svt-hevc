@@ -11,7 +11,7 @@ Summary:        Scalable Video Technology for AV1 Encoder
 Group:          System/Libraries
 License:        BSD-2-Clause-Patent
 URL:            https://github.com/OpenVisualCloud/SVT-HEVC/
-Source0:        https://github.com/OpenVisualCloud/SVT-HEVC/archive/v%{version}/%{name}-%{version}.tar.gz
+Source0:        https://github.com/OpenVisualCloud/SVT-HEVC/archive/v%{version}/%{oname}-%{version}.tar.gz
 
 BuildRequires:  cmake
 BuildRequires:  meson
