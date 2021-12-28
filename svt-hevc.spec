@@ -55,8 +55,8 @@ This package provides %{name}-based GStreamer plug-in.
 %prep
 %autosetup -p1 -n %{oname}-%{version}
 # Patch build gstreamer plugin
-#sed -e "s|install: true,|install: true, include_directories : [ include_directories('../Source/API') ], link_args : '-lSvtAv1Enc',|" \
-#-e "/svtav1enc_dep =/d" -e 's|, svtav1enc_dep||' -e "s|svtav1enc_dep.found()|true|" -i gstreamer-plugin/meson.build
+sed -e "s|install: true,|install: true, include_directories : [ include_directories('../Source/API') ], link_args : '-lSvtHevcEnc',|" \
+-e "/svthevcenc_dep =/d" -e 's|, svthevcenc_dep||' -e "s|svthevcenc_dep.found()|true|" -i gstreamer-plugin/meson.build
 
 %build
 %cmake \
