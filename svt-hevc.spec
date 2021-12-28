@@ -94,4 +94,4 @@ popd
 
 
 %files -n gstreamer1.0-%{name}
-%{_libdir}/gstreamer-1.0/libgstsvtav1enc.so
+%{_libdir}/gstreamer-1.0/libgstsvthevcenc.so
